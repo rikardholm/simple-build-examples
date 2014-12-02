@@ -1,0 +1,59 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>x.mycompany</groupId>
+    <artifactId>greeter-app</artifactId>
+    <version>1.0.0</version>
+
+    <parent>
+        <groupId>x.mycompany</groupId>
+        <artifactId>common-stuff</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>x.mycompany</groupId>
+            <artifactId>greeter-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>logback</id>
+            <dependencies>
+                <dependency>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                    <scope>runtime</scope>
+                    <version>1.1.2</version>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>nop</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-nop</artifactId>
+                    <scope>runtime</scope>
+                    <version>1.7.5</version>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>simple</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-simple</artifactId>
+                    <scope>runtime</scope>
+                    <version>1.7.5</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+</project>

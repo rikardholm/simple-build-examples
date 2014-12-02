@@ -1,0 +1,42 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>x.mycompany</groupId>
+    <artifactId>greeter-domain</artifactId>
+    <version>3.9.0</version>
+
+    <parent>
+        <groupId>x.mycompany</groupId>
+        <artifactId>common-stuff</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>x.mycompany</groupId>
+            <artifactId>greeter-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+            <version>4.11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <scope>test</scope>
+            <version>1.7.5</version>
+        </dependency>
+       <!-- <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <scope>test</scope>
+            <version>1.7.5</version>
+        </dependency> -->
+    </dependencies>
+</project>
