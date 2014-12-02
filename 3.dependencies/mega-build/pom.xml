@@ -1,0 +1,14 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>x.mycompany</groupId>
+    <artifactId>mega-build</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+    <modules>
+        <module>../greeter-app</module>
+        <module>../greeter-api</module>
+        <module>../common-stuff</module>
+        <module>../greeter-domain</module>
+    </modules>
+</project>
